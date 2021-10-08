@@ -47,6 +47,8 @@
   --orange-dark: #EAB534;
   --gray-74: #444444;
   --gray-60: #666666;
+  --gray-11: #E1E1E1;
+  --gray-06: #EEEEEE;
   --black-rgb: 0, 0, 0;
   --gray-rgb: 0, 1, 1;
   --white-rgb: 255, 255, 255;
@@ -61,6 +63,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 /* Visually Hidden */
@@ -93,8 +96,18 @@ body {
 
 /* Buttons - Color */
 
+.buttons:not(.offers--block .buttons) {
+  background-color: var(--basic-red);
+}
+
 .buttons a {
   color: var(--basic-white);
+}
+
+/* Header */
+
+.page--header {
+  background-color: var(--gray-06);
 }
 
 /* Header. Nav - Font, Text */
@@ -120,6 +133,12 @@ body {
   text-align: center;
 }
 
+/* Main. Title - Color */
+
+.page--main h1 {
+  background-color: var(--gray-06);
+}
+
 /* Main. Features - Font, Text */
 
 .features--block h3 {
@@ -131,6 +150,10 @@ body {
 }
 
 /* Main. Features - Color */
+
+.features {
+  background-color: var(--gray-06);
+}
 
 .features--block p {
   color: var(--basic-gray);
@@ -151,6 +174,18 @@ body {
 
 .offers--block p {
   color: var(--basic-gray);
+}
+
+.offers--block:nth-of-type(3n+1) .buttons {
+  background-color: var(--basic-red);
+}
+
+.offers--block:nth-of-type(3n+2) .buttons {
+  background-color: var(--basic-green);
+}
+
+.offers--block:nth-of-type(3n) .buttons {
+  background-color: var(--basic-orange);
 }
 
 /* Main. Ours - Font, Text */
@@ -255,8 +290,18 @@ body {
 
 /* Main. Sort - Color */
 
+.card--block {
+  background-color: var(--gray-06);
+}
+
 .card--block p {
   color: var(--gray-60);
+}
+
+/* Main. Map - Color */
+
+.map {
+  background-color: var(--gray-06);
 }
 
 /* Footer. Contacts - Font, Text */
@@ -312,4 +357,8 @@ body {
 
 .socials p {
   color: var(--gray-74);
+}
+
+.socials--item {
+  background: linear-gradient(0deg, var(--gray-11), var(--gray-11)), var(--basic-white);
 }
