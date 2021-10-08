@@ -1,146 +1,146 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс. Магазин</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
+  <body class="page--body">
+    <header class="page--header">
+      <nav class="nav">
         <a href="index.html"><img src="https://via.placeholder.com/160x66" alt=""></a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a>Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="nav--menu">
+          <li class="menu--item"><a href="">Студия</a></li>
+          <li class="menu--item"><a href="">Клиенты</a></li>
+          <li class="menu--item"><a class="active">Магазин</a></li>
+          <li class="menu--item"><a href="">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="">Корзина</a></li>
+        <ul class="nav--user">
+          <li class="user--item"><a href="">Корзина</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="page--main">
       <h1>Магазин готовых шаблонов</h1>
       <div>
-        <section>
-          <h2>Форма для фильтра шаблонов</h2>
+        <section class="filters">
+          <h2 class="visually--hidden">Форма для фильтра шаблонов</h2>
           <!-- Здесь будет эта форма -->
         </section>
-        <section>
+        <section class="sort">
           <h2>Сортировать:</h2>
-          <h3>Сортировочное меню</h3>
-          <ul>
-            <li><a>По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По названию</a></li>
-            <li><a><span>По убыванию</span></a></li>
-            <li><a href=""><span>По возрастанию</span></a></li>
+          <h3 class="visually--hidden">Сортировочное меню</h3>
+          <ul class="sort--menu">
+            <li class="sort--item"><a class="active">По цене</a></li>
+            <li class="sort--item"><a href="">По типу</a></li>
+            <li class="sort--item"><a href="">По названию</a></li>
+            <li class="sort--item"><a class="link--triangle link--triangle__down active"><span class="visually--hidden">По убыванию</span></a></li>
+            <li class="sort--item"><a href="" class="link--triangle link--triangle__up"><span class="visually--hidden">По возрастанию</span></a></li>
           </ul>
-          <h3>Список отсортированных шаблонов</h3>
-          <ul>
-            <li>
+          <h3 class="visually--hidden">Список отсортированных шаблонов</h3>
+          <ul class="sort--list">
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">Sedona</a></h4>
                 <p>Информационный сайт<br> для туристов</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
-            <li>
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">Pink App</a></h4>
                 <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
-            <li>
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">Barbershop</a></h4>
                 <p>Сайт салона красоты.<br> Для мужчин, да.</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
-            <li>
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">Mishka</a></h4>
                 <p>Интернет-магазин<br> вязаных игрушек</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
-            <li>
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">A Plus</a></h4>
                 <p>Лендинг курсов повышения<br> квалификации</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
-            <li>
+            <li class="sort--card">
               <a href="">
                 <img src="https://via.placeholder.com/358x578" alt="">
               </a>
-              <div>
+              <div class="card--block">
                 <h4><a href="">КВАСТ</a></h4>
                 <p>Промо-сайт производителя<br> крафтового кваса</p>
-                <span><a href="">9 900 ₽</a></span>
+                <span class="buttons"><a href="">9 900 ₽</a></span>
               </div>
             </li>
           </ul>
-          <h3>Пагинация по шаблонам</h3>
-          <ul>
-            <li><a>1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">Следующая</a></li>
+          <h3 class="visually--hidden">Пагинация по шаблонам</h3>
+          <ul class="pagination--list">
+            <li class="pagination--item active"><a>1</a></li>
+            <li class="pagination--item"><a href="">2</a></li>
+            <li class="pagination--item"><a href="">3</a></li>
+            <li class="pagination--item"><a href="">Следующая</a></li>
           </ul>
         </section>
       </div>
-      <section>
-        <h2>Наши координаты</h2>
+      <section class="map">
+        <h2 class="visually--hidden">Наши координаты</h2>
         <a href=""><img src="https://via.placeholder.com/1440x416" alt=""></a>
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="page--footer">
+      <section class="contacts">
         <h2>Nёrds Design Studio</h2>
         <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-        <span><a href="">Напишите нам</a></span>
+        <span class="buttons"><a href="">Напишите нам</a></span>
       </section>
-      <section>
+      <section class="socials">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-        <h3>Список соцсетей, где нас можно найти</h3>
-        <ul>
-          <li>
-            <span>Мы в Вконтакте</span>
+        <h3 class="visually--hidden">Список соцсетей, где нас можно найти</h3>
+        <ul class="socials--list">
+          <li class="socials--item">
+            <span class="visually--hidden">Мы в Вконтакте</span>
             <a href=""><img src="https://via.placeholder.com/81x81" alt=""></a>
           </li>
-          <li>
-            <span>Мы в Фейсбук</span>
+          <li class="socials--item">
+            <span class="visually--hidden">Мы в Фейсбук</span>
             <a href=""><img src="https://via.placeholder.com/81x81" alt=""></a>
           </li>
-          <li>
-            <span>Мы в Инстаграм</span>
+          <li class="socials--item">
+            <span class="visually--hidden">Мы в Инстаграм</span>
             <a href=""><img src="https://via.placeholder.com/81x81" alt=""></a>
           </li>
         </ul>
       </section>
-      <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <p class="visually--hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
     </footer>
   </body>
 </html>
