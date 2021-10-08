@@ -27,6 +27,29 @@
     url("../fonts/robotobold.woff") format("woff");
 }
 
+/* Colors */
+
+:root {
+  --basic-black: #000000;
+  --basic-green: #00CA74;
+  --basic-gray: #283136;
+  --basic-orange: #EFC849;
+  --basic-red: #FB565A;
+  --basic-white: #FFFFFF;
+  --green-darken: #00AA62;
+  --green-dark: #00BC6C;
+  --gray-dark: #231F20;
+  --gray-lighten: #B4B9BB;
+  --red-darken: #D7373B;
+  --gray-light: #D7DCDE;
+  --red-dark: #E74246;
+  --orange-darken: #E5A722;
+  --orange-dark: #EAB534;
+  --black-rgb: 0, 0, 0;
+  --gray-rgb: 0, 1, 1;
+  --white-rgb: 255, 255, 255;
+}
+
 /* Globals */
 
 body {
