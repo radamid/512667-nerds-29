@@ -185,6 +185,62 @@ img {
   opacity: 1;
 }
 
+/* Header. Nav - Grid */
+
+.nav__grid {
+  display: grid;
+  grid-template-columns: 160px auto 160px;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
+}
+
+.nav__grid > a {
+  width: 160px;
+  height: 66px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__grid .nav--menu,
+.nav__grid .nav--user {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.nav__grid .nav--menu {
+  text-align: center;
+}
+
+.nav__grid .nav--user {
+  text-align: right;
+}
+
+.nav__grid .menu--item,
+.nav__grid .user--item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+}
+
+.nav__grid .menu--item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.nav__grid .menu--item a,
+.nav__grid .user--item a {
+  padding-bottom: 19px;
+}
+
+.nav__grid .user--item a {
+  padding-left: 40px;
+}
+
 /* Main. Title - Font, Text */
 
 .page--main h1 {
