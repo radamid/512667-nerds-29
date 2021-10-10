@@ -258,6 +258,16 @@ img {
   background-color: var(--gray-06);
 }
 
+/* Main. Title - Grid */
+
+.page--main__grid h1 {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  padding-top: 78px;
+  padding-bottom: 135px;
+}
+
 /* Main. Features - Font, Text */
 
 .features--block h3 {
