@@ -152,6 +152,11 @@ img {
 
 /* Header. Nav - Color */
 
+.nav > a:focus:not(a.active),
+.nav > a:active:not(a.active) {
+  opacity: 0.3;
+}
+
 .menu--item a:not(a.active),
 .user--item a:not(a.active) {
   color: var(--basic-black);
@@ -175,6 +180,7 @@ img {
 
 .menu--item a.active,
 .user--item a.active {
+  border-bottom: 2px solid var(--basic-red);
   color: var(--basic-black);
   opacity: 1;
 }
