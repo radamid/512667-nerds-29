@@ -74,6 +74,11 @@ a {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Visually Hidden */
 
 .visually--hidden {
