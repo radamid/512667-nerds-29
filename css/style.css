@@ -79,6 +79,14 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* Visually Hidden */
 
 .visually--hidden {
@@ -130,6 +138,18 @@ img {
 .buttons a:active {
   mix-blend-mode: normal;
   opacity: 0.3;
+}
+
+/* Buttons - Block */
+
+.buttons {
+  border: 0;
+  border-radius: 3px;
+}
+
+.buttons > a {
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
 
 /* Header */
@@ -190,9 +210,6 @@ img {
 .nav__grid {
   display: grid;
   grid-template-columns: 160px auto 160px;
-  width: 1160px;
-  margin: 0;
-  padding: 0;
   padding-top: 48px;
 }
 
@@ -286,6 +303,52 @@ img {
 
 .features--block p {
   color: var(--basic-gray);
+}
+
+/* Main. Features - Grid */
+
+.features__grid {
+  display: grid;
+  width: 100%;
+  height: 431px;
+}
+
+.features--block__grid {
+  position: relative;
+}
+
+.features--block__grid h3 {
+  margin-top: 78px;
+}
+
+.features--block__grid:nth-of-type(3n+1) h3 {
+  margin-bottom: 25px;
+}
+
+.features--block__grid:nth-of-type(3n+1) p {
+  margin-bottom: 38px;
+}
+
+.features--block__grid:nth-of-type(3n+2) h3,
+.features--block__grid:nth-of-type(3n) h3 {
+  margin-bottom: 37px;
+}
+
+.features--block__grid:nth-of-type(3n+2) p,
+.features--block__grid:nth-of-type(3n) p {
+  margin-bottom: 26px;
+}
+
+.features--block__grid img {
+  position: absolute;
+  top: 0;
+  right: 3px;
+}
+
+.features--block__grid .buttons {
+  display: grid;
+  width: 240px;
+  height: 50px;
 }
 
 /* Main. Offers - Font, Text */
