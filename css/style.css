@@ -594,6 +594,25 @@ img {
   top: 3px;
 }
 
+/* Main. Partners - Color */
+
+.partners {
+  border-bottom: 2px solid var(--gray-06);
+}
+
+.partners--item > a {
+  opacity: 0.2;
+}
+
+.partners--item > a:hover,
+.partners--item > a:focus {
+  opacity: 1;
+}
+
+.partners--item > a:active {
+  opacity: 0.1;
+}
+
 /* Main. Sort - Font, Text */
 
 .sort h2 {
