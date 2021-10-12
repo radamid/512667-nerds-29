@@ -990,6 +990,19 @@ img {
   background-color: var(--gray-06);
 }
 
+/* Main. Map - Grid */
+
+.map__grid {
+  display: grid;
+}
+
+.map__grid img {
+  display: grid;
+  width: 1440px;
+  height: 416px;
+  margin: 0 auto;
+}
+
 /* Footer. Contacts - Font, Text */
 
 .contacts h2 {
