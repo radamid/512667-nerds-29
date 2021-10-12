@@ -287,6 +287,13 @@ img {
   padding-bottom: 85px;
 }
 
+/* Main. columns - Grid */
+
+.columns__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 /* Main. Features - Font, Text */
 
 .features--block h3 {
@@ -657,6 +664,12 @@ img {
   display: grid;
 }
 
+/* Main. Filters - Grid */
+
+.filters__grid {
+  width: 400px;
+}
+
 /* Main. Sort - Font, Text */
 
 .sort h2 {
@@ -815,6 +828,160 @@ img {
 .pagination--item.active a {
   color: var(--basic-black);
   opacity: 1;
+}
+
+/* Main. Sort - Grid */
+
+.sort__grid {
+  display: grid;
+  grid-template-columns: auto 360px;
+  grid-column-gap: 40px;
+  width: 760px;
+  margin: 0;
+  padding: 0;
+  padding-top: 78px;
+  padding-bottom: 60px;
+}
+
+.sort__grid h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.sort--menu__grid {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort--item__grid {
+  display: inline-block;
+  margin: 0;
+  margin-top: 6px;
+  margin-right: 22px;
+}
+
+.sort--item__grid:nth-last-of-type(1),
+.sort--item__grid:nth-last-of-type(2) {
+  position: absolute;
+  margin-top: 6px;
+  margin-right: 0;
+}
+
+.sort--item__grid:nth-last-of-type(1) {
+  right: 0;
+}
+
+.sort--item__grid:nth-last-of-type(2) {
+  right: 29px;
+}
+
+.sort--item__grid > a {
+  display: grid;
+}
+
+.sort--list__grid {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
+  list-style: none;
+}
+
+.sort--card__grid {
+  position: relative;
+  width: 360px;
+  height: 580px;
+  margin: 0;
+  margin-top: 40px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sort--card__grid > a {
+  display: flex;
+}
+
+.sort--card__grid img {
+  width: 358px;
+  height: 578px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sort--card__grid:hover .card--block__grid {
+  z-index: 0;
+}
+
+.card--block__grid {
+  position: absolute;
+  bottom: 0;
+  width: 358px;
+  text-align: center;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: -1;
+}
+
+.card--block__grid h4 {
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 12px;
+}
+
+.card--block__grid p {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.card--block__grid .buttons {
+  display: grid;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+.pagination--list__grid {
+  grid-column: 1 / 3;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 55px;
+  font-size: 0;
+  list-style: none;
+}
+
+.pagination--item__grid {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.pagination--item__grid:not(:last-child) {
+  width: 50px;
+  margin-right: 11px;
+}
+
+.pagination--item__grid:last-child {
+  width: 260px;
+}
+
+.pagination--item__grid a {
+  display: grid;
+  padding-top: 17px;
+  padding-bottom: 15px;
 }
 
 /* Main. Map - Color */
