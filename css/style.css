@@ -207,6 +207,13 @@ img {
   opacity: 1;
 }
 
+/* Header. Nav - Decoration */
+
+.user--item.user--item__basket {
+  background:
+    url("../img/cart-icon.svg") no-repeat 0 7px;
+}
+
 /* Header. Nav - Grid */
 
 .nav__grid {
@@ -516,6 +523,22 @@ img {
   color: var(--basic-gray);
 }
 
+/* Main. Ours - Decoration */
+
+.ours--item {
+  position: relative;
+}
+
+.ours--item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+  left: -35px;
+  background-color: var(--basic-red);
+}
+
 /* Main. Ours - Grid */
 
 .ours__grid {
@@ -622,6 +645,22 @@ img {
   opacity: 0.1;
 }
 
+/* Main. Partners - Decoration */
+
+.partners--item {
+  position: relative;
+}
+
+.partners--item:not(:nth-of-type(4n))::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  top: 18px;
+  right: 0;
+  background-color: var(--gray-06);
+}
+
 /* Main. Partners - Grid */
 
 .partners__grid {
@@ -631,37 +670,40 @@ img {
 
 .partners--list__grid {
   display: grid;
-  grid-template-columns: max-content max-content max-content max-content ;
+  grid-template-columns: 280px 300px auto 280px;
   margin: 0;
-  margin-left: 32px;
-  margin-right: 43px;
   padding: 0;
   padding-top: 46px;
   padding-bottom: 44px;
   list-style: none;
 }
 
-.partners--item__grid {
-  margin: auto;
+.partners--item__grid:nth-of-type(4n+1) {
+  padding-top: 17px;
+  padding-right: 18px;
+}
+
+.partners--item__grid:nth-of-type(4n+2) {
   padding: 0;
 }
 
-.partners--item__grid:nth-of-type(1) {
-  margin-right: 95px;
-  margin-bottom: 5px;
+.partners--item__grid:nth-of-type(4n+3) {
+  padding-top: 19px;
+  padding-left: 1px;
 }
 
-.partners--item__grid:nth-of-type(2) {
-  margin-right: 104px;
-}
-
-.partners--item__grid:nth-of-type(4) {
-  margin-left: 120px;
-  margin-bottom: 1px;
+.partners--item__grid:nth-of-type(4n) {
+  padding-top: 6px;
+  padding-left: 19px;
 }
 
 .partners--item__grid > a {
   display: grid;
+}
+
+.partners--item__grid img {
+  display: grid;
+  margin: 0 auto;
 }
 
 /* Main. Filters - Grid */
@@ -770,6 +812,16 @@ img {
   border: 1px solid rgba(var(--black-rgb), 0.1);
 }
 
+.sort--card:hover {
+  background: var(--basic-white);
+  box-shadow: 0px 6px 15px rgba(var(--gray-rgb), 0.25);
+  border-radius: 5px;
+}
+
+.sort--card:hover::before {
+  opacity: 1;
+}
+
 .card--block {
   background-color: var(--gray-06);
 }
@@ -828,6 +880,21 @@ img {
 .pagination--item.active a {
   color: var(--basic-black);
   opacity: 1;
+}
+
+/* Main. Sort - Decoration */
+
+.sort--card::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  top: -1px;
+  left: -1px;
+  z-index: 1;
+  opacity: 0.12;
+  background:
+    url("../img/browser.svg") no-repeat 0 0;
 }
 
 /* Main. Sort - Grid */
@@ -896,12 +963,11 @@ img {
 .sort--card__grid {
   position: relative;
   width: 360px;
-  height: 580px;
+  height: 620px;
   margin: 0;
-  margin-top: 40px;
+  padding-top: 40px;
   box-sizing: border-box;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
 }
 
 .sort--card__grid > a {
@@ -1043,6 +1109,19 @@ img {
 .contacts p,
 .contacts p > a {
   color: var(--gray-60);
+}
+
+/* Footer. Contacts - Decoration */
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 30px;
+  right: -595px;
+  background:
+    url("../img/map-marker.png") no-repeat 0 0;
 }
 
 /* Footer. Contacts - Grid */
