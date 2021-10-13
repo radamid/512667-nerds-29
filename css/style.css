@@ -1003,6 +1003,13 @@ img {
   margin: 0 auto;
 }
 
+/* Footer - Grid */
+
+.page--footer__grid {
+  position: relative;
+  display: grid;
+}
+
 /* Footer. Contacts - Font, Text */
 
 .contacts h2 {
@@ -1027,11 +1034,40 @@ img {
   line-height: 54px;
 }
 
-/* Main. Contacts - Color */
+/* Footer. Contacts - Color */
+
+.contacts {
+  background-color: var(--basic-white);
+}
 
 .contacts p,
 .contacts p > a {
   color: var(--gray-60);
+}
+
+/* Footer. Contacts - Grid */
+
+.contacts__grid {
+  position: absolute;
+  top: -362px;
+  padding: 0 50px;
+}
+
+.contacts__grid h2 {
+  margin-top: 49px;
+  margin-bottom: 23px;
+}
+
+.contacts__grid p {
+  margin-bottom: 18px;
+}
+
+.contacts__grid .buttons {
+  display: grid;
+  width: 219px;
+  height: 50px;
+  margin: 0;
+  margin-bottom: 47px;
 }
 
 /* Footer. Socials - Font, Text */
@@ -1074,4 +1110,73 @@ img {
 
 .socials--item a:active {
   opacity: 0.2;
+}
+
+/* Footer. Socials - Grid */
+
+.socials__grid {
+  display: grid;
+  grid-template-columns: 400px auto;
+  margin: 68px 0;
+  padding: 0;
+}
+
+.socials__grid h2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+}
+
+.socials__grid p {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.socials--list__grid {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-column-gap: 9px;
+  height: 81px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials--item__grid {
+  display: grid;
+  width: 81px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 81px;
+}
+
+.socials--item__grid img {
+  display: grid;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.socials--item__grid.socials--item__vk img {
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.socials--item__grid.socials--item__fb img {
+  margin-top: 31px;
+  margin-bottom: 28px;
+}
+
+.socials--item__grid.socials--item__insta img {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
