@@ -1267,7 +1267,6 @@ img {
   height: 40px;
   top: -1px;
   left: -1px;
-  z-index: 1;
   opacity: 0.12;
   background:
     url("../img/browser.svg") no-repeat 0 0;
@@ -1523,6 +1522,239 @@ img {
   height: 50px;
   margin: 0;
   margin-bottom: 47px;
+}
+
+/* Footer. Feedback - Font, Text */
+
+.feedback h2 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.feedback--item span {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback--item input,
+.feedback--item input::placeholder,
+.feedback--item textarea,
+.feedback--item textarea::placeholder {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback--form input[type="submit"] {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Footer. Feedback - Color */
+
+.feedback {
+  background: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(var(--black-rgb), 0.4);
+}
+
+.feedback--item input,
+.feedback--item textarea {
+  border-color: var(--gray-light);
+}
+
+.feedback--item input:hover,
+.feedback--item textarea:hover {
+  border-color: var(--gray-lighten);
+}
+
+.feedback--item input:focus,
+.feedback--item textarea:focus {
+  border-color: var(--basic-black);
+  opacity: 1;
+}
+
+.feedback--item input:invalid,
+.feedback--item textarea:invalid,
+.feedback--item input:invalid::placeholder,
+.feedback--item textarea:invalid::placeholder {
+  color: var(--red-dark);
+  border-color: var(--red-dark);
+  opacity: 1;
+}
+
+.feedback--item input,
+.feedback--item textarea,
+.feedback--item input::placeholder,
+.feedback--item textarea::placeholder {
+  color: var(--gray-74);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.feedback--item input:focus,
+.feedback--item textarea:focus,
+.feedback--item input::placeholder:focus,
+.feedback--item textarea::placeholder:focus {
+  color: var(--gray-74);
+  opacity: 1;
+}
+
+.feedback--form input[type="submit"] {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  cursor: pointer;
+}
+
+.feedback--form input[type="submit"]:hover,
+.feedback--form input[type="submit"]:focus {
+  background-color: var(--red-darken);
+}
+
+.feedback--form input[type="submit"]:active {
+  color: rgba(var(--white-rgb), 0.3);
+  mix-blend-mode: normal;
+  background-color: var(--red-darken);
+  box-shadow: inset 0 3px 0 rgba(var(--gray-rgb), 0.1);
+}
+
+.feedback button {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.feedback button:hover,
+.feedback button:focus {
+  opacity: 1;
+}
+
+.feedback button:active {
+  opacity: 0.1;
+}
+
+/* Footer. Feedback - Flex */
+
+.feedback {
+  display: none;
+  width: 960px;
+  height: 590px;
+  margin: 0;
+  padding-top: 63px;
+  padding-left: 100px;
+  padding-right: 90px;
+  padding-bottom: 84px;
+  box-sizing: border-box;
+}
+
+.feedback__show {
+  display: block;
+}
+
+.feedback__modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.feedback h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
+}
+
+.feedback--item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 47px;
+  border: none;
+}
+
+.feedback--item label {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback--item__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 760px;
+  height: 256px;
+}
+
+.feedback--item__flex label {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.feedback--item__flex label:not(:last-of-type) {
+  flex-basis: 360px;
+  height: 77px;
+}
+
+.feedback--item__flex label:last-of-type {
+  flex-basis: 760px;
+  height: 145px;
+}
+
+.feedback--item__flex input {
+  height: 50px;
+}
+
+.feedback--item__flex textarea {
+  height: 118px;
+}
+
+.feedback--item__flex input,
+.feedback--item__flex textarea {
+  margin: 0;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.feedback--form input[type="submit"] {
+  width: 260px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
+.feedback button {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border: 0;
+  background:
+    url("../img/close-cross.png") no-repeat 0 0;
 }
 
 /* Footer. Socials - Font, Text */

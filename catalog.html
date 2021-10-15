@@ -188,6 +188,28 @@
         <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
         <span class="buttons"><a href="">Напишите нам</a></span>
       </section>
+      <section class="feedback feedback__modal">
+        <h2>Напишите нам</h2>
+        <form class="feedback--form" action="https://echo.htmlacademy.ru" method="post">
+          <legend class="visually--hidden">Форма обратной связи</legend>
+          <fieldset class="feedback--item feedback--item__flex">
+            <label>
+              <span>Ваше имя:</span>
+              <input type="text" name="name" placeholder="Имя Фамилия" required>
+            </label>
+            <label>
+              <span>Ваш email:</span>
+              <input type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label>
+              <span>Текст письма:</span>
+              <textarea name="message" rows="4" placeholder="В свободной форме" required></textarea>
+            </label>
+          </fieldset>
+          <input type="submit" value="Отправить">
+        </form>
+        <button type="button" aria-label="Закрыть"></button>
+      </section>
       <section class="socials socials__grid">
         <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
