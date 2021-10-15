@@ -48,6 +48,7 @@
   --gray-74: #444444;
   --gray-60: #666666;
   --gray-35: #A6A6A6;
+  --gray-33: #ABABAB;
   --gray-24: #C1C1C1;
   --gray-16: #D5D5D5;
   --gray-14: #DBDBDB;
@@ -355,7 +356,7 @@ img {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 18px;
+  border-radius: 50%;
   background-color: var(--basic-white);
   cursor: pointer;
 }
@@ -377,7 +378,7 @@ img {
   height: 8px;
   box-sizing: border-box;
   border: 2px solid var(--gray-24);
-  border-radius: 8px;
+  border-radius: 50%;
   background: var(--basic-white);
 }
 
@@ -770,6 +771,321 @@ img {
 
 .filters__grid {
   width: 400px;
+}
+
+/* Main. Form - Font, Text */
+
+.filters--form legend {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters--form label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filters--form fieldset:first-of-type label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filters--form input[type="number"] {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.filters--form input[type="submit"] {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* Main. Form - Color */
+
+.filters--form label {
+  color: var(--basic-gray);
+}
+
+.filters--form input[type="number"] {
+  color: var(--basic-gray);
+  background: var(--gray-06);
+}
+
+.filters--form input[type="submit"] {
+  color: var(--basic-black);
+  background: var(--gray-06);
+  cursor: pointer;
+}
+
+.filters--form input[type="submit"]:hover,
+.filters--form input[type="submit"]:focus {
+  background: var(--gray-12);
+}
+
+.filters--form input[type="submit"]:active {
+  background: var(--gray-16);
+  box-shadow: inset 0px 3px 0px rgba(var(--gray-rgb), 0.1);
+}
+
+/* Main. Form - Flex */
+
+.filters--form__flex {
+  width: 260px;
+  margin-top: 78px;
+}
+
+.filters--item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters--item > legend {
+  margin: 0;
+  padding: 0;
+}
+
+.filters--item label {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filters--item__cost {
+  margin-bottom: 54px;
+}
+
+.filters--item__cost > legend {
+  margin-bottom: 48px;
+}
+
+.filters--item__cost .range--filter {
+  width: 260px;
+}
+
+.filters--item__cost .range--controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--gray-06);
+  border-radius: 3px;
+}
+
+.filters--item__cost .range--controls .scale {
+  height: 2px;
+  background: var(--gray-light);
+}
+
+.filters--item__cost .range--controls .bar {
+  width: 61%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.filters--item__cost .range--controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--gray-33);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(var(--basic-black), 0.15);
+  cursor: pointer;
+}
+
+.filters--item__cost .range--controls .toggle__min {
+  left: 18px;
+}
+
+.filters--item__cost .range--controls .toggle__max {
+  left: 160px;
+}
+
+.filters--item__cost .price--controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters--item__cost input[type="number"] {
+  width: 80px;
+  height: 38px;
+  margin-left: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
+}
+
+.filters--item__grid {
+  margin-bottom: 46px;
+}
+
+.filters--item__special {
+  margin-bottom: 50px;
+}
+
+.filters--item__grid > legend,
+.filters--item__special > legend {
+  margin-bottom: 16px;
+}
+
+.filters--item__grid label,
+.filters--item__special label {
+  position: relative;
+  display: flex;
+  padding-left: 36px;
+}
+
+.filters--item__grid label:not(:last-of-type),
+.filters--item__special label:not(:last-of-type) {
+  margin-bottom: 21px;
+}
+
+.filters--item__grid input[type="radio"]:disabled + label,
+.filters--item__grid input[type="radio"]:checked:disabled + label {
+  cursor: text;
+}
+
+.filters--item__grid label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.filters--item__grid input[type="radio"] + label::before {
+  background:
+    url("../img/radio-off.svg") no-repeat 0 0;
+  opacity: 0.4;
+}
+
+.filters--item__grid input[type="radio"]:checked + label::before {
+  background:
+    url("../img/radio-on.svg") no-repeat 0 0;
+  opacity: 0.4;
+}
+
+.filters--item__grid input[type="radio"] + label:hover::before,
+.filters--item__grid input[type="radio"]:focus + label::before {
+  background:
+    url("../img/radio-off.svg") no-repeat 0 0;
+  opacity: 1;
+}
+
+.filters--item__grid input[type="radio"]:checked + label:hover::before,
+.filters--item__grid input[type="radio"]:checked:focus + label::before {
+  background:
+    url("../img/radio-on.svg") no-repeat 0 0;
+  opacity: 1;
+}
+
+.filters--item__grid input[type="radio"]:disabled + label::before {
+  background:
+    url("../img/radio-off.svg") no-repeat 0 0;
+  opacity: 0.1;
+  cursor: text;
+}
+
+.filters--item__grid input[type="radio"]:checked:disabled + label::before {
+  background:
+    url("../img/radio-on.svg") no-repeat 0 0;
+  opacity: 0.1;
+  cursor: text;
+}
+
+.filters--item__special input[type="radio"]:disabled + label,
+.filters--item__special input[type="radio"]:checked:disabled + label {
+  cursor: text;
+}
+
+.filters--item__special label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 23px;
+}
+
+.filters--item__special input[type="checkbox"] + label::before {
+  width: 23px;
+  background:
+    url("../img/checkbox-off.svg") no-repeat 0 0;
+  opacity: 0.4;
+}
+
+.filters--item__special input[type="checkbox"]:checked + label::before {
+  width: 25px;
+  background:
+    url("../img/checkbox-on.svg") no-repeat 0 0;
+  opacity: 0.4;
+}
+
+.filters--item__special input[type="checkbox"] + label:hover::before,
+.filters--item__special input[type="checkbox"]:focus + label::before {
+  width: 23px;
+  background:
+    url("../img/checkbox-off.svg") no-repeat 0 0;
+  opacity: 1;
+}
+
+.filters--item__special input[type="checkbox"]:checked + label:hover::before,
+.filters--item__special input[type="checkbox"]:checked:focus + label::before {
+  width: 25px;
+  background:
+    url("../img/checkbox-on.svg") no-repeat 0 0;
+  opacity: 1;
+}
+
+.filters--item__special input[type="checkbox"]:disabled + label::before {
+  width: 23px;
+  background:
+    url("../img/checkbox-off.svg") no-repeat 0 0;
+  opacity: 0.1;
+  cursor: text;
+}
+
+.filters--item__special input[type="checkbox"]:checked:disabled + label::before {
+  width: 25px;
+  background:
+    url("../img/checkbox-on.svg") no-repeat 0 0;
+  opacity: 0.1;
+  cursor: text;
+}
+
+.filters--form__flex input[type="submit"] {
+  width: 260px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
 }
 
 /* Main. Sort - Font, Text */
@@ -1296,7 +1612,7 @@ img {
   margin: 0;
   padding: 0;
   border: 0;
-  border-radius: 81px;
+  border-radius: 50%;
 }
 
 .socials--item__grid img {

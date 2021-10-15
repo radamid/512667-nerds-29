@@ -26,7 +26,74 @@
       <div class="columns__grid container">
         <section class="filters filters__grid">
           <h2 class="visually--hidden">Форма для фильтра шаблонов</h2>
-          <!-- Здесь будет эта форма -->
+          <form class="filters--form filters--form__flex" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters--item filters--item__cost">
+              <legend>Стоимость:</legend>
+              <div class="range--filter">
+                <div class="range--controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 61%;
+                      margin-left: 7%
+                    "></div>
+                  </div>
+                  <div class="toggle toggle__min" tabindex="0" style="
+                    left: 7%
+                  "></div>
+                  <div class="toggle toggle__max" tabindex="0" style="
+                    left: 61%
+                  "></div>
+                </div>
+                <div class="price--controls">
+                  <label>
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label>
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters--item filters--item__grid">
+              <legend>Сетка:</legend>
+              <input class="visually--hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
+              <label for="adaptive">
+                Адаптивная
+              </label>
+              <input class="visually--hidden" type="radio" name="grid" value="fixed" id="fixed">
+              <label for="fixed">
+                Фиксированная
+              </label>
+              <input class="visually--hidden" type="radio" name="grid" value="stretch" id="stretch">
+              <label for="stretch">
+                Резиновая
+              </label>
+            </fieldset>
+            <fieldset class="filters--item filters--item__special">
+              <legend>Особенности:</legend>
+              <input class="visually--hidden" type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">
+                Слайдер
+              </label>
+              <input class="visually--hidden" type="checkbox" name="feature-block" id="feature-block">
+              <label for="feature-block">
+                Блок преимуществ
+              </label>
+              <input class="visually--hidden" type="checkbox" name="news" checked id="news">
+              <label for="news">
+                Новости
+              </label>
+              <input class="visually--hidden" type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">
+                Галерея
+              </label>
+              <input class="visually--hidden" type="checkbox" name="basket" id="basket">
+              <label for="basket">
+                Корзина
+              </label>
+            </fieldset>
+            <input type="submit" value="Показать">
+          </form>
         </section>
         <section class="sort sort__grid">
           <h2>Сортировать:</h2>
