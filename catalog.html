@@ -186,29 +186,29 @@
       <section class="contacts contacts__grid">
         <h2>Nёrds Design Studio</h2>
         <p>191186, Санкт-Петербург,<br> ул. Б.&nbsp;Конюшенная, д. 19/8<br><a href="tel:+78122757575">тел.&nbsp;+7 (812) 275-75-75</a></p>
-        <span class="buttons"><a href="">Напишите нам</a></span>
+        <span class="buttons contacts--open__modal"><a href="">Напишите нам</a></span>
       </section>
       <section class="feedback feedback__modal">
         <h2>Напишите нам</h2>
-        <form class="feedback--form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback--form feedback--form__modal" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback--item feedback--item__flex">
             <legend class="visually--hidden">Форма обратной связи</legend>
             <label>
               <span>Ваше имя:</span>
-              <input type="text" name="name" placeholder="Имя Фамилия" required>
+              <input class="feedback--name__modal" type="text" name="name" placeholder="Имя Фамилия" required>
             </label>
             <label>
               <span>Ваш email:</span>
-              <input type="email" name="email" placeholder="email@example.com" required>
+              <input class="feedback--email__modal" type="email" name="email" placeholder="email@example.com" required>
             </label>
             <label>
               <span>Текст письма:</span>
-              <textarea name="message" rows="4" placeholder="В&nbsp;свободной форме" required></textarea>
+              <textarea class="feedback--message__modal" name="message" rows="4" placeholder="В&nbsp;свободной форме" required></textarea>
             </label>
           </fieldset>
-          <input type="submit" value="Отправить">
+          <input class="feedback--submit__modal" type="submit" value="Отправить">
         </form>
-        <button type="button" aria-label="Закрыть"></button>
+        <button class="feedback--close__modal" type="button" aria-label="Закрыть"></button>
       </section>
       <section class="socials socials__grid">
         <h2>Давайте дружить, это выгодно!</h2>
@@ -231,5 +231,6 @@
       </section>
       <p class="visually--hidden">Репозиторий создан для обучения на&nbsp;профессиональном онлайн‑курсе &laquo;<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и&nbsp;CSS, уровень&nbsp;1</a>&raquo;.</p>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

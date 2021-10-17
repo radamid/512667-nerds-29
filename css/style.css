@@ -27,6 +27,43 @@
     url("../fonts/robotobold.woff") format("woff");
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateX(2000px);
+  }
+  70% {
+    transform: translateX(-30px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* Colors */
 
 :root {
@@ -1666,10 +1703,6 @@ img {
   box-sizing: border-box;
 }
 
-.feedback__show {
-  display: block;
-}
-
 .feedback__modal {
   position: fixed;
   top: 0;
@@ -1763,6 +1796,17 @@ img {
   border: 0;
   background:
     url("../img/close-cross.png") no-repeat 0 0;
+}
+
+/* Footer. Feedback - Script */
+
+.feedback--show__modal {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.feedback--error__modal {
+  animation: shake 0.6s;
 }
 
 /* Footer. Socials - Font, Text */
