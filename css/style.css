@@ -29,6 +29,21 @@
 
 /* Animations */
 
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateX(2000px);
+  }
+  70% {
+    transform: translateX(-30px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateX(2000px);
@@ -41,6 +56,26 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -1576,6 +1611,14 @@ img {
   line-height: 18px;
 }
 
+.feedback--item input::-moz-placeholder, .feedback--item textarea::-moz-placeholder {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .feedback--item input,
 .feedback--item input::placeholder,
 .feedback--item textarea,
@@ -1620,6 +1663,12 @@ img {
   opacity: 1;
 }
 
+.feedback--item input:invalid::-moz-placeholder, .feedback--item textarea:invalid::-moz-placeholder {
+  color: var(--red-dark);
+  border-color: var(--red-dark);
+  opacity: 1;
+}
+
 .feedback--item input:invalid,
 .feedback--item textarea:invalid,
 .feedback--item input:invalid::placeholder,
@@ -1629,6 +1678,12 @@ img {
   opacity: 1;
 }
 
+.feedback--item input::-moz-placeholder, .feedback--item textarea::-moz-placeholder {
+  color: var(--gray-74);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
 .feedback--item input,
 .feedback--item textarea,
 .feedback--item input::placeholder,
@@ -1636,6 +1691,11 @@ img {
   color: var(--gray-74);
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+
+.feedback--item input::-moz-placeholder:focus, .feedback--item textarea::-moz-placeholder:focus {
+  color: var(--gray-74);
+  opacity: 1;
 }
 
 .feedback--item input:focus,
@@ -1791,11 +1851,13 @@ img {
 
 .feedback--show__modal {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .feedback--error__modal {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 /* Footer. Socials - Font, Text */
@@ -1875,6 +1937,7 @@ img {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-columns: min-content min-content min-content;
   grid-column-gap: 9px;
   height: 81px;
