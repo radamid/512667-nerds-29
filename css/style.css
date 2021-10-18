@@ -1482,11 +1482,13 @@ img {
   display: grid;
 }
 
-.map__grid img {
+.map__grid iframe {
   display: grid;
   width: 1440px;
   height: 416px;
   margin: 0 auto;
+  border: 0;
+  box-sizing: border-box;
 }
 
 /* Footer - Grid */
@@ -1529,19 +1531,6 @@ img {
 .contacts p,
 .contacts p > a {
   color: var(--gray-60);
-}
-
-/* Footer. Contacts - Decoration */
-
-.contacts::before {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 190px;
-  top: 30px;
-  right: -595px;
-  background:
-    url("../img/map-marker.png") no-repeat 0 0;
 }
 
 /* Footer. Contacts - Grid */
