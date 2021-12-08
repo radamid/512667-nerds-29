@@ -405,8 +405,10 @@ img {
   display: inline-block;
   width: 288px;
   height: 18px;
+  left: 50%;
   bottom: 96px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0;
   text-align: center;
 }
